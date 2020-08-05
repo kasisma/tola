@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Activity.SignUpActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="회원가입"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7CDC86"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+                />
+
+    <LinearLayout
+
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="#5CB0FDBA"
+                android:drawableLeft="@drawable/ic_baseline_group_24"
+                android:ems="10"
+                android:hint="이메일"
+                android:inputType="textPersonName"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:backgroundTint="#7CDC86"
+                android:text="중복확인" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#5CB0FDBA"
+            android:drawableLeft="@drawable/ic_baseline_group_24"
+
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:textSize="22dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#5CB0FDBA"
+            android:drawableLeft="@drawable/ic_baseline_group_24"
+
+            android:hint="비밀번호"
+            android:inputType="textPersonName"
+            android:textSize="22dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#5CB0FDBA"
+            android:drawableLeft="@drawable/ic_baseline_group_24"
+
+            android:hint="비밀번호 확인"
+            android:inputType="textPersonName"
+            android:textSize="22dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="이용약관동의" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7CDC86"
+            android:text="회원가입하기" />
+    </LinearLayout>
+
+</LinearLayout>
